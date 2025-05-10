@@ -40,12 +40,18 @@
         text-decoration: underline;
       }
 
-      
+
       .device-grid {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
       }
-            
+       
+      .logo-container {
+        position: absolute;  
+        top: 0;              
+        left: 0;            
+        padding: 10px;       
+      }  
  
