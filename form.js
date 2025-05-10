@@ -1,4 +1,3 @@
-https://script.google.com/macros/s/AKfycbx6mgBOQld_mY95WVLTojXo71sOua_4r_niBo1NC-1SxPtJQ54xGxtO-eUuqc31IrdiGQ/exec
 
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
