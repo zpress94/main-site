@@ -13,7 +13,7 @@ form.addEventListener('submit', function(e) {
   const formData = new FormData(form);
   formData.append('g-recaptcha-response', recaptchaResponse);
 
-  fetch('https://script.google.com/macros/s/your-deployment-id/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbx6mgBOQld_mY95WVLTojXo71sOua_4r_niBo1NC-1SxPtJQ54xGxtO-eUuqc31IrdiGQ/exec', {
     method: 'POST',
     body: formData
   })
