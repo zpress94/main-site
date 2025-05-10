@@ -6,6 +6,8 @@
     <title>NORM Alabama</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   </head>
 
   <body>
@@ -23,14 +25,12 @@
       <form id="contact-form">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
-    
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br><br>
-    
         <label for="message">Message:</label><br>
         <textarea id="message" name="message" rows="5" required></textarea><br><br>
-    
         <button type="submit">Send</button>
+        <div class="g-recaptcha" data-sitekey="6LfdATUrAAAAAD0Pwlgh8nvb_EqMxywH82vOorih"></div>
         <p id="form-status"></p>
       </form>
     </div>
