@@ -12,6 +12,13 @@
         padding: 2rem;
     } 
 
+    img {
+      max-width: 300px;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
     .device {
         text-align: center;
         margin: 20px;
@@ -56,12 +63,7 @@
         left: 0;            
         padding: 10px;       
       }
-      img {
-        max-width: 300px;
-        margin-bottom: 2rem;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      }
+      
       .nav-links {
         display: flex;
         justify-content: center; /* Or space-between/space-around */
