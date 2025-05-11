@@ -57,9 +57,18 @@ a:hover {
 }
 
 .logo {
-  height: 80px; /* adjust as needed */
+  height: 100px; /* adjust as needed */
   width: auto;
   display: block;
+}
+
+.logo-container {
+  position: absolute;
+  height: 10px;
+  width: auto;  
+  top: 15px;              
+  left: 0;            
+  padding: 10px;       
 }
 
 
