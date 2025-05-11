@@ -50,11 +50,17 @@
        
       .logo-container {
         position: absolute;
-        height: 80px;
+        height: 10px;
         width: auto;  
-        top: 0;              
+        top: 15px;              
         left: 0;            
         padding: 10px;       
+      }
+      img {
+        max-width: 300px;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
       .nav-links {
         display: flex;
