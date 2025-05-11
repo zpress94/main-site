@@ -44,13 +44,22 @@ a:hover {
 }
 
 
-.logo-container {
-  position: absolute;
-  height: 80px;
-  width: auto;  
-  top: 0;              
-  left: 0;            
-  padding: 10px;       
+.logo-nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo {
+  height: 80px; /* adjust as needed */
+  width: auto;
+  display: block;
 }
 
 form {
