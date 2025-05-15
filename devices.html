@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4FF33NFXW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P4FF33NFXW');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devices</title>
@@ -31,34 +40,43 @@
     <div class="device">
       <img src="images/CAR1.jpg" alt="CAR-1">
       <a href="https://www.chrisonlinestore.com/" 
-          target="_blank">Visit Chris' Online Store</a>
-          
+          target="_blank"
+          onclick="gtag('event', 'click', { 'event_category': 'Device Links', 'event_label': 'Chris Store' });"
+          >Visit Chris' Online Store</a>
     </div>
 
     
     <div class="device">
       <img src="images/Mantor.jpg" alt="Mantor">
       <a href="https://www.mantor-restorer.com/" 
-          target="_blank">Visit Mantor Store</a>
+          target="_blank"
+          onclick="gtag('event', 'click', { 'event_category': 'Device Links', 'event_label': 'Mantor Store' });"
+          >Visit Mantor Store</a>
     </div>
 
     
     <div class="device">
       <img src="images/Stealth.jpg" alt="Stealth Retainer">
       <a href="https://www.stealthretainers.com/products/stainless-steel-p-tainer-kit/" 
-          target="_blank">Visit Stealth Store</a>
+          target="_blank"
+          onclick="gtag('event', 'click', { 'event_category': 'Device Links', 'event_label': 'Stealth Store' });"
+          >Visit Stealth Store</a>
     </div>
 
     <div class="device">
       <img src="images/icon.jpg" alt="Reddit">
       <a href="https://www.reddit.com/r/foreskin_restoration/wiki/methods/" 
-          target="_blank">Visit the Subreddit for More Devices</a>
+          target="_blank"
+          onclick="gtag('event', 'click', { 'event_category': 'Device Links', 'event_label': 'Reddit' });"
+          >Visit the Subreddit for More Devices</a>
     </div>
 
     <div class="device">
       <img src="images/NORM-Logo-320.png" alt="NORM Site">
       <a href="https://norm.org" 
-          target="_blank">Visit the NORM Website Here</a>
+          target="_blank"
+          onclick="gtag('event', 'click', { 'event_category': 'Device Links', 'event_label': 'NORM' });"
+          >Visit the NORM Website Here</a>
     </div>
   </div>
 </body>
@@ -68,3 +86,7 @@
 
 
 
+<a href="https://www.chrisonlinestore.com/" target="_blank" 
+   onclick="gtag('event', 'click', { 'event_category': 'Device Links', 'event_label': 'Chris Store' });">
+   Visit Chris' Online Store
+</a>
