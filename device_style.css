@@ -19,74 +19,84 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     
+    .device-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+
     .device {
-        text-align: center;
-        margin: 20px;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        background-color: #f9f9f9;
-        width: 200px;
-      }
-      
-      .device img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-      }
-      
-      .device a {
-        display: inline-block;
-        margin-top: 10px;
-        text-decoration: none;
-        color: #007bff;
-        font-weight: bold;
-      }
-      
-      .device a:hover {
-        text-decoration: underline;
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: skyblue;
+      padding: 20px;
+      width: 220px;
+      height: 100%;               /* optional: or set a fixed height */
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
 
+    .device img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .device a {
+      display: inline-block;
+      margin-top: auto;
+      font-size: 1rem;         /* Change size here (e.g. 1.2rem or 16px) */
+      font-weight: bold;       /* Use 'normal' or 'bold' */
+      color: #003366;          /* Change to whatever color you like */
+      text-decoration: none;   /* Removes the underline */
+     
+    }
+    
+    .device a:hover {
+      text-decoration: underline;
+      color: #0055aa;
+    }
+    
 
-      .device-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-      }
-       
-      .logo-container {
-        position: absolute;
-        height: 10px;
-        width: auto;  
-        top: 15px;              
-        left: 0;            
-        padding: 10px;       
-      }
+    .logo-container {
+      position: absolute;
+      height: 10px;
+      width: auto;  
+      top: 15px;              
+      left: 0;            
+      padding: 10px;       
+    }
+
       
-      .nav-links {
-        display: flex;
-        justify-content: center; /* Or space-between/space-around */
-        list-style: none;
-        background-color: #333;
-        padding: 10px 0;
-        margin: 0;
-      }
       
-      .nav-links li {
-        margin: 0 15px;
-      }
+    .nav-links {
+      display: flex;
+      justify-content: center; /* Or space-between/space-around */
+      list-style: none;
+      background-color: #333;
+      padding: 10px 0;
+      margin: 0;
+    }
       
-      .nav-links a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px 10px;
-      }
+    .nav-links li {
+      margin: 0 15px;
+    }
       
-      .nav-links a:hover {
-        background-color: #007bff;
-        border-radius: 5px;
-      }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+      
+    .nav-links a:hover {
+      background-color: #007bff;
+      border-radius: 5px;
+    }
         
  
