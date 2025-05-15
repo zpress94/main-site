@@ -68,17 +68,16 @@
   </div>
   
   <script>
-  function trackClick(linkName) {
-    fetch('https://script.google.com/macros/s/AKfycbzTqJjO3-dE0kLIgwxLOjPTpxt-n5NxR--z8_CWBMIpzju-ZdB5cAUQVVa3Rcla6Jas/exec', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({ link: linkName })
-    }).then(response => {
-      console.log("Click counted for:", linkName);
-    }).catch(error => {
-      console.error("Error counting click:", error);
-    });
-   }
+  
+   function trackClick(linkName) {
+  fetch('https://script.google.com/macros/s/AKfycbzTqJjO3-dE0kLIgwxLOjPTpxt-n5NxR--z8_CWBMIpzju-ZdB5cAUQVVa3Rcla6Jas/exec', {
+    method: 'POST',
+    mode: 'no-cors', // disables CORS enforcement (response is opaque)
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({ link: linkName })
+  });
+}
+
   </script>
 </body>
 </html>
