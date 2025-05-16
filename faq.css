@@ -1,0 +1,147 @@
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: url(images/bgnorm.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+} 
+
+img {
+  max-width: 300px;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.device-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.device {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: skyblue;
+  padding: 20px;
+  width: 220px;
+  height: 100%;               /* optional: or set a fixed height */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.device img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.device a {
+  display: inline-block;
+  margin-top: auto;
+  font-size: 1rem;         /* Change size here (e.g. 1.2rem or 16px) */
+  font-weight: bold;       /* Use 'normal' or 'bold' */
+  color: #003366;          /* Change to whatever color you like */
+  text-decoration: none;   /* Removes the underline */
+ 
+}
+
+.device a:hover {
+  text-decoration: underline;
+  color: #0055aa;
+}
+
+
+.logo-container {
+  position: absolute;
+  height: 10px;
+  width: auto;  
+  top: 15px;              
+  left: 0;            
+  padding: 10px;       
+}
+
+  
+  
+.nav-links {
+  display: flex;
+  justify-content: center; /* Or space-between/space-around */
+  list-style: none;
+  background-color: #333;
+  padding: 10px 0;
+  margin: 0;
+}
+  
+.nav-links li {
+  margin: 0 15px;
+}
+  
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+  
+.nav-links a:hover {
+  background-color: #007bff;
+  border-radius: 5px;
+}
+    
+
+
+  .faq-container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .faq-question:hover {
+    background-color: #0056b3;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    background-color: #f1f1f1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .faq-answer.open {
+    max-height: 500px; /* Enough to reveal full content */
+    padding: 1rem;
+  }
+  
+  
